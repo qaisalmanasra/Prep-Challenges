@@ -35,11 +35,12 @@ const findMax = (arr)=>{
 //  
 
 const sumNums = (arr)=>{
-    let sum;
+    let sum = 0;
     let i;
-    sum = 0;
     for (i = 0; i < arr.length; i++) {
-         sum = sum + arr[i];
+    if (typeof arr[i] == "number") {
+            sum = sum + arr[i];   
+        }
     }
     return sum;
 }
